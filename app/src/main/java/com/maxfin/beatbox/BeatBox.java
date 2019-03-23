@@ -26,6 +26,11 @@ public class BeatBox {
         loadSounds();
     }
 
+    public void release() {
+        mSoundPool.release();
+    }
+
+
 
     public void play(Sound sound) {
         Integer soundId = sound.getSoundId();
